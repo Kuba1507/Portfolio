@@ -58,10 +58,8 @@ body {
 			z-index: -1;
 
 			&__menu {
-				width: 100%;
 				text-align: center;
 				list-style-type: none;
-				transition: all 0.3s;
 
 				&-item {
 					&-link {
@@ -78,5 +76,22 @@ body {
 		.show-nav {
 			height: 350px;
 		}
+
+		.nav-items-animation {
+			animation: navItemsAnimation 1s both;
+			transition: opacity 0.3s ease-in-out, transform 0.3s;
+		}
+	}
+}
+
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
 	}
 }
