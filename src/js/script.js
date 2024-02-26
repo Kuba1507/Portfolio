@@ -1,13 +1,9 @@
-const burgerBtn = document.querySelector(".burger-btn");
-const navigation = document.querySelector(".nav");
-const navItems = document.querySelectorAll(".nav__item");
+const burgerBtn = document.querySelector('.hamburger')
+const navigation = document.querySelector('.nav')
+const navItems = document.querySelectorAll('.nav__item')
 
 const handleNav = () => {
-	navigation.classList.toggle("show-nav");
+	burgerBtn.classList.toggle('is-active')
+}
 
-	navItems.forEach((item) => {
-		item.classList.toggle("show-nav-items");
-	});
-};
-
-burgerBtn.addEventListener("click", handleNav);
+burgerBtn.addEventListener('click', handleNav)
