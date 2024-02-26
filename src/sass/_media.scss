@@ -1,39 +1,33 @@
-@media (min-width: 680px) {
+@media (min-width: 768px) {
 	.header {
 		.wrapper {
-			.burger-btn {
+			.hamburger {
 				display: none;
 			}
 
 			.nav {
 				position: static;
-				display: block;
+				flex-direction: row;
+				justify-content: flex-end;
 				height: auto;
-				width: auto;
-				background-color: transparent;
+				width: fit-content;
+				z-index: 1;
 
-				&__item {
-					display: inline-block;
-					margin: 0 1em;
-					font-size: 1.8rem;
+				&__menu {
+					display: flex;
+					align-items: center;
+
+					&-item {
+						&-link {
+							padding-left: 1.25em;
+							padding-right: 1.25em;
+							height: 80px;
+							font-size: 1.7rem;
+							opacity: 1;
+						}
+					}
 				}
 			}
-		}
-	}
-}
-
-@media (min-width: 768px) {
-	.header {
-		.wrapper {
-			padding: 0.5em 1.75em;
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.header {
-		.wrapper {
-			padding: 0.5em;
 		}
 	}
 }
