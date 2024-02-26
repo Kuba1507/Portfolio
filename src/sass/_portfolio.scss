@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 *,
 *::before,
 *::after {
@@ -14,9 +16,90 @@ html {
 
 body {
 	font-size: 1.6rem;
+	background-color: $bg-color;
 }
 
 .wrapper {
 	margin: 0 auto;
 	width: min(100%, 1200px);
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: green;
+	z-index: 100;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5em 1em;
+		height: 100%;
+
+		.logo {
+			img {
+				width: 65px;
+				height: 65px;
+			}
+		}
+
+		.burger-btn {
+			padding: 1em;
+			background: none;
+			border: 1px solid black;
+			cursor: pointer;
+
+			&__box {
+				position: relative;
+				width: 40px;
+				height: 30px;
+			}
+
+			&__bars,
+			&__bars::after,
+			&__bars::before {
+				position: absolute;
+				right: 0;
+				height: 3px;
+				content: "";
+				background-color: red;
+				transition: width 0.3s;
+			}
+
+			&__bars {
+				width: 100%;
+
+				&::after {
+					top: 13px;
+					width: 60%;
+				}
+
+				&::before {
+					top: 27px;
+					width: 30%;
+					transition-delay: 0.1s;
+				}
+			}
+
+			&:hover {
+				.burger-btn__bars::after,
+				.burger-btn__bars::before {
+					width: 100%;
+				}
+			}
+		}
+
+		.nav {
+			&__item {
+				margin-left: 1.5em;
+				font-family: "Poppins", sans-serif;
+				font-size: 1.8rem;
+				color: $dark;
+				text-decoration: none;
+			}
+		}
+	}
 }
