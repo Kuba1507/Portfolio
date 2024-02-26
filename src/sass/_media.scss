@@ -1,0 +1,39 @@
+@media (min-width: 680px) {
+	.header {
+		.wrapper {
+			.burger-btn {
+				display: none;
+			}
+
+			.nav {
+				position: static;
+				display: block;
+				height: auto;
+				width: auto;
+				background-color: transparent;
+
+				&__item {
+					display: inline-block;
+					margin: 0 1em;
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		.wrapper {
+			padding: 0.5em 1.75em;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		.wrapper {
+			padding: 0.5em;
+		}
+	}
+}
