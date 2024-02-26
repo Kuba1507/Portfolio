@@ -1,9 +1,11 @@
 const burgerBtn = document.querySelector('.hamburger')
 const navigation = document.querySelector('.nav')
-const navItems = document.querySelectorAll('.nav__item')
+const navList = document.querySelector('.nav__menu')
 
 const handleNav = () => {
 	burgerBtn.classList.toggle('is-active')
+	navigation.classList.toggle('show-nav')
+	// navList.classList.toggle('show-menu')
 }
 
 burgerBtn.addEventListener('click', handleNav)
