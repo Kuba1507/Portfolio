@@ -1,4 +1,4 @@
-@use "colors" as *;
+@use 'colors' as *;
 
 *,
 *::before,
@@ -25,72 +25,21 @@ body {
 }
 
 .header {
-	position: fixed;
-	top: 0;
-	left: 0;
 	height: 80px;
-	width: 100%;
 	background-color: green;
-	z-index: 100;
 
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0.5em 1em;
+		padding: 1em;
 		height: 100%;
+		z-index: 999;
 
 		.logo {
 			img {
-				width: 65px;
-				height: 65px;
-			}
-		}
-
-		.burger-btn {
-			display: block;
-			padding: 1em;
-			background: none;
-			border: none;
-			cursor: pointer;
-
-			&__box {
-				position: relative;
-				width: 40px;
-				height: 30px;
-			}
-
-			&__bars,
-			&__bars::after,
-			&__bars::before {
-				position: absolute;
-				right: 0;
-				height: 3px;
-				content: "";
-				background-color: $dark;
-				transition: width 0.3s;
-			}
-
-			&__bars {
-				width: 100%;
-
-				&::after {
-					top: 13px;
-					width: 60%;
-				}
-
-				&::before {
-					top: 27px;
-					width: 30%;
-					transition-delay: 0.1s;
-				}
-			}
-
-			&:hover {
-				.burger-btn__bars::after,
-				.burger-btn__bars::before {
-					width: 100%;
-				}
+				width: 60px;
+				height: 60px;
 			}
 		}
 
@@ -98,29 +47,29 @@ body {
 			position: absolute;
 			top: 80px;
 			left: 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
 			width: 100%;
-			height: 0;
-			background: red;
-			overflow: hidden;
-			transition: 0.5s ease;
+			background-color: red;
 			z-index: -1;
 
-			&__item {
-				display: block;
-				margin: 1em 0;
-				font-family: "Poppins", sans-serif;
-				color: $dark;
-				text-decoration: none;
+			&__menu {
+				width: 100%;
 				text-align: center;
-			}
-		}
+				list-style-type: none;
 
-		.show-nav {
-			height: 280px;
-			overflow: visible;
+				&-item {
+					width: 100%;
+					height: 100%;
+
+					&-link {
+						display: block;
+						padding: 1.75em 0;
+						height: 100%;
+						font-family: 'Poppins', sans-serif;
+						color: $dark;
+						text-decoration: none;
+					}
+				}
+			}
 		}
 	}
 }
