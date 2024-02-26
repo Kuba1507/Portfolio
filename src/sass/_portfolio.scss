@@ -28,6 +28,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
+	height: 80px;
 	width: 100%;
 	background-color: green;
 	z-index: 100;
@@ -95,14 +96,17 @@ body {
 
 		.nav {
 			position: absolute;
-			top: 100%;
+			top: 80px;
 			left: 0;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
 			width: 100%;
-			height: 280px;
+			height: 0;
 			background: red;
+			overflow: hidden;
+			transition: 0.5s ease;
+			z-index: -1;
 
 			&__item {
 				display: block;
@@ -112,6 +116,11 @@ body {
 				text-decoration: none;
 				text-align: center;
 			}
+		}
+
+		.show-nav {
+			height: 280px;
+			overflow: visible;
 		}
 	}
 }
