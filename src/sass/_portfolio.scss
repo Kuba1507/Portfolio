@@ -24,6 +24,10 @@ body {
 	width: min(100%, 1200px);
 }
 
+.block-scroll {
+	overflow-y: hidden;
+}
+
 .header {
 	height: 80px;
 
@@ -51,9 +55,10 @@ body {
 			justify-content: space-around;
 			height: 0;
 			width: 100%;
+			background-color: $bg-color;
 			transition: height 0.3s ease-in;
 			overflow: hidden;
-			z-index: -1;
+			z-index: 999;
 
 			&__menu {
 				text-align: center;
@@ -84,6 +89,10 @@ body {
 		.nav-items-animation {
 			animation: navItemsAnimation 1s both;
 			transition: opacity 0.3s ease-in-out, transform 0.3s;
+		}
+
+		.navigation-shadow {
+			box-shadow: 0px 3px 2px rgba(183, 183, 183, 0.4);
 		}
 	}
 }
@@ -150,6 +159,31 @@ body {
 							border-radius: 50%;
 						}
 					}
+				}
+
+				&__socials {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					&-button {
+						margin: 1em 0.75em;
+						height: 33px;
+						width: 33px;
+						background-color: $turqoise;
+						border: none;
+					}
+				}
+
+				&__cta-button {
+					margin-top: 1em;
+					padding: 0.5em 1.5em;
+					font-family: "Poppins", sans-serif;
+					font-size: 2rem;
+					border: 3px solid $turqoise-light;
+					color: $turqoise-light;
+					background-color: $bg-color;
+					cursor: pointer;
 				}
 			}
 
