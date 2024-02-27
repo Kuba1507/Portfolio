@@ -162,5 +162,21 @@
 				}
 			}
 		}
+
+		.about-me {
+			.wrapper {
+				.about-me-box {
+					display: flex;
+					align-items: center;
+
+					.info-box {
+					}
+
+					.profile-picture {
+						display: block;
+					}
+				}
+			}
+		}
 	}
 }

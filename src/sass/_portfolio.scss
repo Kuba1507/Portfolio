@@ -105,12 +105,12 @@ body {
 		color: $turqoise-light;
 		text-align: right;
 
-		&::before {
+		.line {
 			position: absolute;
 			top: 50%;
-			right: 30%;
+			right: 105px;
+			width: 40%;
 			height: 5px;
-			width: 50%;
 			background: rgb(1, 124, 140);
 			background: linear-gradient(
 				270deg,
@@ -118,8 +118,6 @@ body {
 				rgba(16, 165, 160, 1) 65%,
 				rgba(35, 214, 185, 1) 100%
 			);
-			transform: translateY(-50%);
-			content: "";
 		}
 	}
 
@@ -255,13 +253,50 @@ body {
 
 	.about-me {
 		margin-top: 2em;
-		padding: 2em 1em;
+		padding: 1.5em 1em;
 		background-color: $light-grey;
 
 		.wrapper {
-			.profile-picture {
-				width: 200px;
-				height: 200px;
+			.about-me-box {
+				.info-box {
+					display: flex;
+					flex-direction: column;
+					padding: 1em;
+					order: 2;
+
+					&__text {
+						margin: 1.25em 0;
+						font-family: "Poppins", sans-serif;
+						font-size: 1.5rem;
+						color: $grey2;
+					}
+
+					&__cta-button {
+						margin-top: 1em;
+						padding: 0.4em 1.8em;
+						font-family: "Poppins", sans-serif;
+						font-size: 1.9rem;
+						border: 3px solid $blue;
+						color: $blue;
+						background-color: transparent;
+						transition: border 0.3s, background-color 0.3s, color 0.3s;
+						cursor: pointer;
+
+						&:hover {
+							border: 3px solid $creme-white;
+							background-color: $turqoise;
+							color: $creme-white;
+						}
+					}
+				}
+
+				.profile-picture {
+					display: none;
+					padding: 1em;
+					width: 200px;
+					height: 200px;
+					order: 1;
+				}
 			}
 		}
 	}
