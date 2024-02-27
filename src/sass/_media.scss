@@ -105,6 +105,15 @@
 
 @media (min-width: 992px) {
 	.main {
+		.section-title {
+			font-size: 4rem;
+
+			.line {
+				right: 140px;
+				width: 20%;
+			}
+		}
+
 		.welcome-section {
 			.wrapper {
 				flex-direction: row;
@@ -164,12 +173,25 @@
 		}
 
 		.about-me {
+			padding: 4em 0;
+
 			.wrapper {
 				.about-me-box {
 					display: flex;
 					align-items: center;
 
 					.info-box {
+						align-items: flex-end;
+						text-align: right;
+						margin-left: 8em;
+
+						&__text {
+							font-size: 1.6rem;
+						}
+
+						&__cta-button {
+							width: 30%;
+						}
 					}
 
 					.profile-picture {

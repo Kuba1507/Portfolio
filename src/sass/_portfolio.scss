@@ -258,10 +258,11 @@ body {
 
 		.wrapper {
 			.about-me-box {
+				padding: 1em;
+
 				.info-box {
 					display: flex;
 					flex-direction: column;
-					padding: 1em;
 					order: 2;
 
 					&__text {
@@ -276,8 +277,8 @@ body {
 						padding: 0.4em 1.8em;
 						font-family: "Poppins", sans-serif;
 						font-size: 1.9rem;
-						border: 3px solid $blue;
-						color: $blue;
+						border: 3px solid $turqoise-light;
+						color: $turqoise-light;
 						background-color: transparent;
 						transition: border 0.3s, background-color 0.3s, color 0.3s;
 						cursor: pointer;
@@ -292,9 +293,8 @@ body {
 
 				.profile-picture {
 					display: none;
-					padding: 1em;
-					width: 200px;
-					height: 200px;
+					height: 500px;
+					border: 6px solid $blue;
 					order: 1;
 				}
 			}
