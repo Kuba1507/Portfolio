@@ -25,7 +25,7 @@ const handleNavItemsAnimation = () => {
 };
 
 const blockScroll = () => {
-	body.classList.add("block-scroll");
+	body.classList.toggle("block-scroll");
 };
 
 burgerBtn.addEventListener("click", handleNav);

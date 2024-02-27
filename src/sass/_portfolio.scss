@@ -183,7 +183,14 @@ body {
 					border: 3px solid $turqoise-light;
 					color: $turqoise-light;
 					background-color: $bg-color;
+					transition: border 0.3s, background-color 0.3s, color 0.3s;
 					cursor: pointer;
+
+					&:hover {
+						border: 3px solid $creme-white;
+						background-color: $turqoise;
+						color: $creme-white;
+					}
 				}
 			}
 
