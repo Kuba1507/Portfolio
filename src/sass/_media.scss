@@ -1,3 +1,22 @@
+@media (max-width: 375px) {
+	.main {
+		.welcome-section {
+			.wrapper {
+				.image-part {
+					&__trapezoid {
+						height: 220px;
+					}
+
+					&__avatar {
+						width: 250px;
+						height: 250px;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.header {
 		.wrapper {

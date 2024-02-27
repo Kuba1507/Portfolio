@@ -100,6 +100,7 @@ body {
 			}
 
 			.image-part {
+				position: relative;
 				display: flex;
 				justify-content: center;
 				width: 90%;
@@ -107,9 +108,9 @@ body {
 
 				&__trapezoid {
 					position: relative;
-					margin-top: 6em;
+					margin-top: 3em;
 					height: 260px;
-					width: 80%;
+					width: min(80%, 280px);
 					background: rgb(1, 124, 140);
 					background: linear-gradient(
 						225deg,
@@ -118,6 +119,15 @@ body {
 						rgba(35, 214, 185, 1) 100%
 					);
 					clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+					z-index: 2;
+				}
+
+				&__avatar {
+					position: absolute;
+					bottom: 0;
+					height: 300px;
+					width: 300px;
+					z-index: 3;
 				}
 			}
 		}
