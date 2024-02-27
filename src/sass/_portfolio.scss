@@ -98,6 +98,31 @@ body {
 }
 
 .main {
+	.section-title {
+		position: relative;
+		font-family: "Titillium Web", sans-serif;
+		font-size: 3rem;
+		color: $turqoise-light;
+		text-align: right;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			right: 30%;
+			height: 5px;
+			width: 50%;
+			background: rgb(1, 124, 140);
+			background: linear-gradient(
+				270deg,
+				rgba(1, 124, 140, 1) 20%,
+				rgba(16, 165, 160, 1) 65%,
+				rgba(35, 214, 185, 1) 100%
+			);
+			transform: translateY(-50%);
+			content: "";
+		}
+	}
+
 	.welcome-section {
 		.wrapper {
 			display: flex;
@@ -216,7 +241,7 @@ body {
 					clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
 					z-index: 2;
 				}
-				
+
 				&__avatar {
 					position: absolute;
 					bottom: 0;
@@ -224,6 +249,19 @@ body {
 					width: 300px;
 					z-index: 3;
 				}
+			}
+		}
+	}
+
+	.about-me {
+		margin-top: 2em;
+		padding: 2em 1em;
+		background-color: $light-grey;
+
+		.wrapper {
+			.profile-picture {
+				width: 200px;
+				height: 200px;
 			}
 		}
 	}
