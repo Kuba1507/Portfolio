@@ -96,21 +96,75 @@ body {
 			align-items: center;
 
 			.content-part {
+				padding: 2em;
+				text-align: center;
 				order: 2;
+
+				&__heading {
+					font-size: 3.8rem;
+					font-family: "Titillium Web", sans-serif;
+					font-weight: 900;
+					color: transparent;
+					-webkit-text-stroke: 1px #203c61;
+				}
+
+				&__heading > span {
+					-webkit-text-stroke: 0;
+					color: transparent;
+					background: linear-gradient(
+						225deg,
+						rgba(1, 124, 140, 1) 20%,
+						rgba(16, 165, 160, 1) 65%,
+						rgba(35, 214, 185, 1) 100%
+					);
+					-webkit-background-clip: text;
+					background-clip: text;
+				}
+
+				&__description,
+				&__professions {
+					font-family: "Poppins", sans-serif;
+					color: $grey;
+					font-size: 1.5rem;
+				}
+
+				&__professions {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+					margin-top: 1em;
+
+					&-box {
+						display: flex;
+						align-items: center;
+						margin: 0.25em 1em;
+
+						.dot {
+							display: inline-block;
+							margin-right: 0.25em;
+							height: 14px;
+							width: 14px;
+							background-color: transparent;
+							border: 1px solid $grey;
+							border-radius: 50%;
+						}
+					}
+				}
 			}
 
 			.image-part {
 				position: relative;
 				display: flex;
 				justify-content: center;
-				width: 90%;
+				width: 100%;
 				order: 1;
 
 				&__trapezoid {
 					position: relative;
 					margin-top: 3em;
 					height: 260px;
-					width: min(80%, 280px);
+					width: min(70%, 280px);
 					background: rgb(1, 124, 140);
 					background: linear-gradient(
 						225deg,

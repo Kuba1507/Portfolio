@@ -2,6 +2,10 @@
 	.main {
 		.welcome-section {
 			.wrapper {
+				.content-part {
+					padding: 2em 0.4em;
+				}
+
 				.image-part {
 					&__trapezoid {
 						height: 220px;
