@@ -202,7 +202,6 @@ body {
 				order: 1;
 
 				&__trapezoid {
-					position: relative;
 					margin-top: 3em;
 					height: 260px;
 					width: min(70%, 280px);
@@ -213,10 +212,11 @@ body {
 						rgba(16, 165, 160, 1) 65%,
 						rgba(35, 214, 185, 1) 100%
 					);
+					border-radius: 12px;
 					clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
 					z-index: 2;
 				}
-
+				
 				&__avatar {
 					position: absolute;
 					bottom: 0;
