@@ -4,6 +4,10 @@
 			.wrapper {
 				.content-part {
 					padding: 2em 0.4em;
+
+					&__cta-button {
+						font-size: 1.7rem;
+					}
 				}
 
 				.image-part {
@@ -48,6 +52,50 @@
 							font-size: 1.7rem;
 							opacity: 1;
 						}
+					}
+				}
+			}
+		}
+	}
+
+	.main {
+		.welcome-section {
+			.wrapper {
+				.content-part {
+					padding: 2em 6em;
+
+					&__heading {
+						font-size: 5rem;
+					}
+
+					&__description,
+					&__professions {
+						font-size: 1.6rem;
+					}
+
+					&__socials {
+						&-button {
+							margin: 1.5em 0.75em;
+							width: 40px;
+							height: 40px;
+						}
+					}
+
+					&__cta-button {
+						font-size: 2.1rem;
+					}
+				}
+
+				.image-part {
+					&__trapezoid {
+						margin-top: 3em;
+						height: 350px;
+						width: min(70%, 350px);
+					}
+
+					&__avatar {
+						height: 350px;
+						width: 350px;
 					}
 				}
 			}
