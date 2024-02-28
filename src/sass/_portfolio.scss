@@ -107,24 +107,26 @@ body {
 
 	.section-title {
 		position: relative;
+		padding: 0.5em;
 		font-family: "Titillium Web", sans-serif;
 		font-size: 3rem;
 		color: $turqoise-light;
-		text-align: right;
+		text-align: left;
 
-		.line {
+		&::after {
 			position: absolute;
 			top: 50%;
-			right: 105px;
-			width: 40%;
-			height: 5px;
+			left: 115px;
+			width: min(40%, 200px);
+			height: 4px;
 			background: rgb(1, 124, 140);
 			background: linear-gradient(
-				270deg,
+				90deg,
 				rgba(1, 124, 140, 1) 20%,
 				rgba(16, 165, 160, 1) 65%,
 				rgba(35, 214, 185, 1) 100%
 			);
+			content: "";
 		}
 	}
 
@@ -289,7 +291,10 @@ body {
 					}
 
 					&__cta-button {
-						margin-top: 1em;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-top: 1.5em;
 						padding: 0.4em 1.8em;
 						font-family: "Poppins", sans-serif;
 						font-size: 1.9rem;
