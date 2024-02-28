@@ -186,6 +186,7 @@
 				.about-me-box {
 					display: flex;
 					align-items: center;
+					padding: 2em;
 
 					.info-box {
 						align-items: flex-end;
@@ -207,6 +208,20 @@
 
 					.dots {
 						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1140px) {
+	.main {
+		.about-me {
+			.wrapper {
+				.about-me-box {
+					.dots {
+						bottom: -30px;
 					}
 				}
 			}
