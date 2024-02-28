@@ -17,6 +17,7 @@ const closeNav = () => {
 	burgerBtn.classList.remove("is-active");
 	navigation.classList.remove("show-nav");
 	navigation.classList.remove("navigation-shadow");
+	body.classList.remove("block-scroll");
 
 	navItems.forEach((item) => {
 		item.classList.remove("nav-items-animation");
