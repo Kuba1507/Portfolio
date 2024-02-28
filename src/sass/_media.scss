@@ -186,7 +186,7 @@
 						}
 
 						&__cta-button {
-							width: 35%;
+							width: 30%;
 						}
 					}
 
@@ -196,6 +196,27 @@
 
 					.dots {
 						display: block;
+					}
+				}
+			}
+		}
+
+		.testimonials {
+			margin-top: 4em;
+
+			.wrapper {
+				.section-title {
+					text-align: left;
+				}
+
+				.testimonials-box {
+					flex-direction: row;
+					justify-content: space-between;
+					margin: 3em 0.5em;
+
+					&__block {
+						max-width: 350px;
+						margin: 2em 0;
 					}
 				}
 			}
