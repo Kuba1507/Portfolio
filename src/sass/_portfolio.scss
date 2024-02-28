@@ -205,6 +205,12 @@ body {
 						width: 33px;
 						background-color: $turqoise;
 						border: none;
+						transition: background-color 0.3s;
+						cursor: pointer;
+
+						&:hover {
+							background-color: $turqoise-light;
+						}
 					}
 				}
 
