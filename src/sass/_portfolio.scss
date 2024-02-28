@@ -82,7 +82,6 @@ body {
 						color: $dark;
 						text-decoration: none;
 						transition: color 0.3s;
-						// opacity: 0;
 
 						&:hover {
 							color: $dark-hover;
@@ -112,27 +111,10 @@ body {
 
 	.section-title {
 		position: relative;
-		padding: 0.5em;
 		font-family: "Titillium Web", sans-serif;
 		font-size: 3rem;
 		color: $turqoise-light;
 		text-align: left;
-
-		&::after {
-			position: absolute;
-			top: 50%;
-			left: 115px;
-			width: min(40%, 200px);
-			height: 4px;
-			background: rgb(1, 124, 140);
-			background: linear-gradient(
-				90deg,
-				rgba(1, 124, 140, 1) 20%,
-				rgba(16, 165, 160, 1) 65%,
-				rgba(35, 214, 185, 1) 100%
-			);
-			content: "";
-		}
 	}
 
 	.welcome-section {
@@ -142,7 +124,7 @@ body {
 			align-items: center;
 
 			.content-part {
-				padding: 2em;
+				padding: 1em;
 				text-align: center;
 				order: 2;
 
@@ -282,7 +264,6 @@ body {
 		.wrapper {
 			.about-me-box {
 				position: relative;
-				padding: 1em;
 
 				.info-box {
 					display: flex;
@@ -336,6 +317,13 @@ body {
 				}
 			}
 		}
+	}
+
+	.testimonials {
+		margin-top: 2em;
+		padding: 1.5em 1em;
+
+		
 	}
 }
 

@@ -106,19 +106,8 @@
 @media (min-width: 992px) {
 	.main {
 		.section-title {
+			font-size: 3.5rem;
 			text-align: right;
-
-			&::after {
-				left: auto;
-				right: 125px;
-				background: rgb(1, 124, 140);
-				background: linear-gradient(
-					270deg,
-					rgba(1, 124, 140, 1) 20%,
-					rgba(16, 165, 160, 1) 65%,
-					rgba(35, 214, 185, 1) 100%
-				);
-			}
 		}
 
 		.welcome-section {
@@ -180,13 +169,12 @@
 		}
 
 		.about-me {
-			padding: 4em 0 8em 0;
+			padding: 4em 1em 8em 1em;
 
 			.wrapper {
 				.about-me-box {
 					display: flex;
 					align-items: center;
-					padding: 2em;
 
 					.info-box {
 						align-items: flex-end;
