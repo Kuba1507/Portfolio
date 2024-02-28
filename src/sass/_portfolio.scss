@@ -276,6 +276,7 @@ body {
 
 		.wrapper {
 			.about-me-box {
+				position: relative;
 				padding: 1em;
 
 				.info-box {
@@ -315,8 +316,18 @@ body {
 				.profile-picture {
 					display: none;
 					height: 500px;
-					border: 6px solid $blue;
+					border: 4px solid $blue;
 					order: 1;
+					z-index: 3;
+				}
+
+				.dots {
+					display: none;
+					position: absolute;
+					bottom: -90px;
+					left: -90px;
+					width: 320px;
+					z-index: 2;
 				}
 			}
 		}

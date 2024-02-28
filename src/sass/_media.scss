@@ -180,7 +180,7 @@
 		}
 
 		.about-me {
-			padding: 4em 0;
+			padding: 4em 0 8em 0;
 
 			.wrapper {
 				.about-me-box {
@@ -202,6 +202,10 @@
 					}
 
 					.profile-picture {
+						display: block;
+					}
+
+					.dots {
 						display: block;
 					}
 				}
