@@ -323,7 +323,52 @@ body {
 		margin-top: 2em;
 		padding: 1.5em 1em;
 
-		
+		.wrapper {
+			.testimonials-box {
+				&__block {
+					padding: 1em;
+					background-color: $light-grey;
+
+					&-company {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						&-logo {
+							height: 60px;
+							width: 60px;
+						}
+
+						&-name {
+							font-family: "Titillium Web", sans-serif;
+							font-size: 2.2rem;
+							color: $dark;
+						}
+					}
+
+					&-stars {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-top: 0.6em;
+
+						svg {
+							margin: 0 0.1em;
+						}
+					}
+
+					&-content {
+						margin-top: 1em;
+
+						&-description {
+							font-family: "Poppins", sans-serif;
+							color: $grey2;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
