@@ -53,14 +53,25 @@ const handlePortfolioWebsites = () => {
 	const windowWidth = window.innerWidth || document.documentElement.clientWidth;
 	const windowHeight =
 		window.innerHeight || document.documentElement.clientHeight;
+	const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 	const halfWindowHeight = windowHeight / 2;
 
 	if (windowWidth <= 768) {
+		let activeWebsite = null; // Przechowuje referencję do aktywnego elementu
+
+		// Znajdź aktywny element
 		portfolioWebsites.forEach((website) => {
 			const rect = website.getBoundingClientRect();
-			const elementVerticalPosition = rect.top + rect.height / 2;
+			const elementTopPosition = rect.top;
 
-			if (elementVerticalPosition <= halfWindowHeight) {
+			if (elementTopPosition <= halfWindowHeight) {
+				activeWebsite = website;
+			}
+		});
+
+		// Dodaj klasę 'hover' tylko do aktywnego elementu
+		portfolioWebsites.forEach((website) => {
+			if (website === activeWebsite) {
 				website.classList.add("hover");
 			} else {
 				website.classList.remove("hover");
