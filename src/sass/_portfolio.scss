@@ -396,6 +396,7 @@ body {
 				flex-wrap: wrap;
 
 				&__website {
+					position: relative;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -403,14 +404,52 @@ body {
 					width: min(90%, 300px);
 					background-size: cover;
 					background-position: center;
-					border: 5px solid $turqoise2;
+					border: 6px solid $turqoise2;
 					border-radius: 15px;
+					overflow: hidden;
 					cursor: pointer;
 
 					&-img {
 						width: min(100%, 300px);
 						border-radius: 8px;
 					}
+
+					&-text {
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						padding: 1em;
+						font-family: "Poppins", sans-serif;
+						background: rgb(1, 124, 140);
+						background: linear-gradient(
+							270deg,
+							rgba(1, 124, 140, 0.65) 20%,
+							rgba(16, 165, 160, 0.65) 65%,
+							rgba(35, 214, 185, 0.65) 100%
+						);
+						color: white;
+						text-align: center;
+						clip-path: circle(0 at 50% 90%);
+						transition: clip-path 0.5s;
+
+						&-company {
+							font-size: 3rem;
+							font-weight: bold;
+						}
+
+						&-description {
+							font-size: 1.8rem;
+						}
+					}
+				}
+
+				.portfolio-box__website:hover .portfolio-box__website-text {
+					clip-path: circle(120% at 50% 90%);
 				}
 			}
 		}
