@@ -58,7 +58,7 @@ const handlePortfolioWebsites = () => {
 	const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 	const halfWindowHeight = windowHeight / 2;
 
-	if (windowWidth <= 768) {
+	if (windowWidth <= 710) {
 		let activeWebsite = null;
 
 		portfolioWebsites.forEach((website) => {
