@@ -401,7 +401,7 @@ body {
 					justify-content: center;
 					align-items: center;
 					margin: 2em 1em;
-					width: min(90%, 300px);
+					width: min(100%, 300px);
 					background-size: cover;
 					background-position: center;
 					border: 6px solid $turqoise2;
@@ -448,7 +448,8 @@ body {
 					}
 				}
 
-				.portfolio-box__website:hover .portfolio-box__website-text {
+				.portfolio-box__website:hover .portfolio-box__website-text,
+				.hover .portfolio-box__website-text {
 					clip-path: circle(120% at 50% 90%);
 				}
 			}

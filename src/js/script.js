@@ -4,6 +4,7 @@ const burgerBtn = document.querySelector(".hamburger");
 const navigation = document.querySelector(".nav");
 const navList = document.querySelector(".nav__menu");
 const navItems = document.querySelectorAll(".nav__menu-item-link");
+const portfolioWebsites = document.querySelectorAll(".portfolio-box__website");
 
 const handleNav = () => {
 	burgerBtn.classList.toggle("is-active");
@@ -48,8 +49,35 @@ const blockScroll = () => {
 	body.classList.toggle("block-scroll");
 };
 
+const handlePortfolioWebsites = () => {
+	const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+	const windowHeight =
+		window.innerHeight || document.documentElement.clientHeight;
+	const halfWindowHeight = windowHeight / 2;
+
+	if (windowWidth <= 768) {
+		portfolioWebsites.forEach((website) => {
+			const rect = website.getBoundingClientRect();
+			const elementVerticalPosition = rect.top + rect.height / 2;
+
+			if (elementVerticalPosition <= halfWindowHeight) {
+				website.classList.add("hover");
+			} else {
+				website.classList.remove("hover");
+			}
+		});
+	} else {
+		portfolioWebsites.forEach((website) => {
+			website.classList.remove("hover");
+		});
+	}
+};
+
 burgerBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleHeaderShadow);
 navItems.forEach((item) => {
 	item.addEventListener("click", closeNav);
 });
+window.addEventListener("load", handlePortfolioWebsites);
+window.addEventListener("scroll", handlePortfolioWebsites);
+window.addEventListener("resize", handlePortfolioWebsites);
