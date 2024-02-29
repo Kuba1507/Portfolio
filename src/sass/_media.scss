@@ -221,6 +221,25 @@
 				}
 			}
 		}
+
+		.portfolio {
+			padding: 4em 1em;
+
+			.wrapper {
+				.portfolio-box {
+					margin-top: 2em;
+
+					&__website {
+						margin: 2em 0.5em;
+						width: min(90%, 325px);
+
+						&-img {
+							width: min(100%, 325px);
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -232,6 +251,18 @@
 					.dots {
 						bottom: -30px;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.main {
+		.portfolio {
+			.wrapper {
+				.portfolio-box {
+					justify-content: space-between;
 				}
 			}
 		}

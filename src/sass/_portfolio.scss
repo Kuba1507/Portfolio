@@ -390,25 +390,26 @@ body {
 		.wrapper {
 			.portfolio-box {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
 				align-items: center;
-				justify-content: center;
-				margin-top: 1em;
+				justify-content: space-around;
+				flex-wrap: wrap;
 
 				&__website {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					margin: 2em 0;
-					width: 90%;
+					margin: 2em 1em;
+					width: min(90%, 300px);
 					background-size: cover;
 					background-position: center;
-					border: 5px solid $blue;
+					border: 6px solid $turqoise2;
 					border-radius: 15px;
+					cursor: pointer;
 
 					&-img {
-						width: min(100%, 350px);
-						border-radius: 10px;
+						width: min(100%, 300px);
+						border-radius: 8px;
 					}
 				}
 			}
