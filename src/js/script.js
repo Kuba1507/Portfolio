@@ -6,6 +6,8 @@ const navList = document.querySelector(".nav__menu");
 const navItems = document.querySelectorAll(".nav__menu-item-link");
 const portfolioWebsites = document.querySelectorAll(".portfolio-box__website");
 
+const mazex = document.querySelector(".mazex");
+
 const handleNav = () => {
 	burgerBtn.classList.toggle("is-active");
 	navigation.classList.toggle("show-nav");
@@ -57,9 +59,8 @@ const handlePortfolioWebsites = () => {
 	const halfWindowHeight = windowHeight / 2;
 
 	if (windowWidth <= 768) {
-		let activeWebsite = null; // Przechowuje referencję do aktywnego elementu
+		let activeWebsite = null;
 
-		// Znajdź aktywny element
 		portfolioWebsites.forEach((website) => {
 			const rect = website.getBoundingClientRect();
 			const elementTopPosition = rect.top;
@@ -69,7 +70,6 @@ const handlePortfolioWebsites = () => {
 			}
 		});
 
-		// Dodaj klasę 'hover' tylko do aktywnego elementu
 		portfolioWebsites.forEach((website) => {
 			if (website === activeWebsite) {
 				website.classList.add("hover");
@@ -83,6 +83,14 @@ const handlePortfolioWebsites = () => {
 		});
 	}
 };
+
+const openNewTab = (url) => {
+	window.open(url, "_blank");
+};
+
+mazex.addEventListener("click", () => {
+	openNewTab("https://mazex-hds.pl/");
+});
 
 burgerBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleHeaderShadow);
