@@ -485,6 +485,34 @@ body {
 			}
 		}
 	}
+
+	.contact {
+		position: relative;
+		padding: 1.5em 1em;
+		background: rgb(1, 124, 140);
+		background: linear-gradient(
+			90deg,
+			rgba(1, 124, 140, 1) 20%,
+			rgba(16, 165, 160, 1) 65%,
+			rgba(35, 214, 185, 1) 100%
+		);
+
+		.section-title {
+			margin-top: 1em;
+			color: $creme-white;
+			text-align: left;
+		}
+
+		.skew-decoration {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 75%;
+			height: 25px;
+			background-color: $light-grey;
+			transform: translateX(-20px) skew(-55deg);
+		}
+	}
 }
 
 @keyframes navItemsAnimation {
