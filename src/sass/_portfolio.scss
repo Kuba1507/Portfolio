@@ -595,6 +595,8 @@ body {
 
 					.form-textarea {
 						padding: 0.5em;
+						max-height: 300px;
+						resize: vertical;
 					}
 
 					.form-button {
