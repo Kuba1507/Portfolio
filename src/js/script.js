@@ -4,6 +4,8 @@ const burgerBtn = document.querySelector(".hamburger");
 const navigation = document.querySelector(".nav");
 const navList = document.querySelector(".nav__menu");
 const navItems = document.querySelectorAll(".nav__menu-item-link");
+const contactSection = document.querySelector(".contact");
+const portfolioSection = document.querySelector(".portfolio");
 const portfolioWebsites = document.querySelectorAll(".portfolio-box__website");
 
 const mazex = document.querySelector(".mazex");
@@ -44,6 +46,18 @@ const handleHeaderShadow = () => {
 		header.classList.add("header-shadow");
 	} else {
 		header.classList.remove("header-shadow");
+	}
+};
+
+const scrollToContact = () => {
+	if (contactSection) {
+		contactSection.scrollIntoView({ behavior: "smooth" });
+	}
+};
+
+const scrollToPortfolio = () => {
+	if (portfolioSection) {
+		portfolioSection.scrollIntoView({ behavior: "smooth" });
 	}
 };
 
