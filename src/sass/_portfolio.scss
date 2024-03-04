@@ -344,7 +344,7 @@ body {
 						justify-content: center;
 
 						&-logo {
-							height: 50px;
+							height: 4;
 							width: 50px;
 						}
 
@@ -618,6 +618,36 @@ body {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+.footer {
+	&__mobile {
+		padding: 1em;
+		text-align: center;
+
+		&-text {
+			font-family: "Poppins", sans-serif;
+			font-weight: 300;
+			color: $grey;
+		}
+
+		&-button {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			margin: 1em;
+			width: 35px;
+			height: 35px;
+			background-color: $turqoise2;
+			border: none;
+			border-radius: 50%;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $turqoise;
 			}
 		}
 	}
