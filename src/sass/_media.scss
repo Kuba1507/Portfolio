@@ -312,6 +312,21 @@
 			}
 		}
 	}
+
+	.footer {
+		&__desktop {
+			display: flex;
+		}
+
+		&__mobile {
+			padding: 0;
+			padding-bottom: 2em;
+
+			&-button {
+				display: none;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1140px) {

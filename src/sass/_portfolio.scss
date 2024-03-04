@@ -624,6 +624,53 @@ body {
 }
 
 .footer {
+	&__desktop {
+		display: none;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2em;
+
+		&-logo {
+			width: 60px;
+			height: 60px;
+			cursor: pointer;
+		}
+
+		&-links {
+			&-link {
+				margin: 0 1em;
+				font-family: "Poppins", sans-serif;
+				font-weight: 600;
+				color: $dark;
+				text-decoration: none;
+				transition: color 0.3s;
+
+				&:hover {
+					color: $dark-hover;
+				}
+			}
+		}
+
+		&-socials {
+			display: flex;
+
+			&-button {
+				margin: 0 0.5em;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: $turqoise2;
+				border: none;
+				transition: background-color 0.3s;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $turqoise;
+				}
+			}
+		}
+	}
+
 	&__mobile {
 		padding: 1em;
 		text-align: center;
