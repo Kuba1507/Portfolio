@@ -8,8 +8,6 @@ const contactSection = document.querySelector(".contact");
 const portfolioSection = document.querySelector(".portfolio");
 const portfolioWebsites = document.querySelectorAll(".portfolio-box__website");
 
-const mazex = document.querySelector(".mazex");
-
 const handleNav = () => {
 	burgerBtn.classList.toggle("is-active");
 	navigation.classList.toggle("show-nav");
@@ -101,6 +99,15 @@ const handlePortfolioWebsites = () => {
 const openNewTab = (url) => {
 	window.open(url, "_blank");
 };
+
+const mazex = document.querySelector(".mazex");
+const rafservis = document.querySelector(".rafservis");
+const telegrafcity = document.querySelector(".telegrafcity");
+const pytlikbud = document.querySelector(".pytlikbud");
+const glamcar = document.querySelector(".glamcar");
+const hairdresser = document.querySelector(".hairdresser");
+const budmar = document.querySelector(".budmar");
+const teraphist = document.querySelector(".teraphist");
 
 mazex.addEventListener("click", () => {
 	openNewTab("https://mazex-hds.pl/");
