@@ -488,7 +488,7 @@ body {
 
 	.contact {
 		position: relative;
-		padding: 1.5em 1em;
+		padding: 1.5em 1em 4em 1em;
 		background: rgb(1, 124, 140);
 		background: linear-gradient(
 			90deg,
@@ -496,6 +496,7 @@ body {
 			rgba(16, 165, 160, 1) 65%,
 			rgba(35, 214, 185, 1) 100%
 		);
+		overflow: hidden;
 
 		.section-title {
 			margin-top: 1em;
@@ -505,12 +506,22 @@ body {
 
 		.skew-decoration {
 			position: absolute;
-			top: 0;
-			left: 0;
 			width: 75%;
 			height: 25px;
-			background-color: $light-grey;
-			transform: translateX(-20px) skew(-55deg);
+
+			&--top {
+				top: 0;
+				left: 0;
+				background-color: $light-grey;
+				transform: translateX(-20px) skew(-55deg);
+			}
+
+			&--bottom {
+				bottom: 0;
+				right: 0;
+				background-color: $bg-color;
+				transform: translateX(20px) skew(-55deg);
+			}
 		}
 
 		&-box {
@@ -595,6 +606,14 @@ body {
 						background-color: transparent;
 						border: 2px solid $creme-white;
 						border-radius: 6px;
+						transition: background-color 0.3s, border 0.3s, color 0.3s;
+						cursor: pointer;
+
+						&:hover {
+							background-color: $creme-white;
+							border: 2px solid $turqoise;
+							color: $turqoise;
+						}
 					}
 				}
 			}
