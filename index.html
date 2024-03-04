@@ -387,13 +387,15 @@
                     </div>
                     <div class="contact-box__form">
                         <p class="contact-box__form-info">lub wypełnij formularz...</p>
-                        <form action="">
-                            <div class="contact-box__form-row">
-                                <input type="text" class="form-input">
-                                <input type="text" class="form-input">
+                        <form action="" class="form">
+                            <div class="form-box">
+                                <input type="text" placeholder="Imię" class="form-input form-input--name">
+                                <input type="text" placeholder="E-mail" class="form-input form-input--email">
                             </div>
-                            <input type="text">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <input type="text" placeholder="Temat Twojej wiadomości" class="form-input form-input--subject">
+                            <textarea id="" cols="30" rows="10" placeholder="Twoja wiadomość"
+                                class="form-textarea"></textarea>
+                            <button type="submit" class="form-button">Wyślij</button>
                         </form>
                     </div>
                 </div>
