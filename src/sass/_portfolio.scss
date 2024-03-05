@@ -621,6 +621,24 @@ body {
 					}
 				}
 			}
+
+			.msg-status {
+				display: block;
+				margin-top: 1em;
+				font-family: "Poppins", sans-serif;
+				font-weight: bold;
+				color: $creme-white;
+				visibility: hidden;
+			}
+
+			.success,
+			.error {
+				visibility: visible;
+			}
+
+			.error {
+				color: tomato;
+			}
 		}
 	}
 }

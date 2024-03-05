@@ -387,17 +387,20 @@
                     </div>
                     <div class="contact-box__form">
                         <p class="contact-box__form-info">lub wypełnij formularz...</p>
-                        <form action="" class="form">
+                        <form action="mail.php" method="post" class="form">
                             <div class="form-box">
-                                <input type="text" placeholder="Imię" class="form-input form-input--name">
-                                <input type="text" placeholder="E-mail" class="form-input form-input--email">
+                                <input type="text" name="name" placeholder="Imię" class="form-input form-input--name"
+                                    required>
+                                <input type="email" name="email" placeholder="E-mail"
+                                    class="form-input form-input--email" required>
                             </div>
-                            <input type="text" placeholder="Temat Twojej wiadomości"
-                                class="form-input form-input--subject">
-                            <textarea id="" cols="30" rows="10" placeholder="Twoja wiadomość"
-                                class="form-textarea"></textarea>
+                            <input type="text" name="subject" placeholder="Temat Twojej wiadomości"
+                                class="form-input form-input--subject" required>
+                            <textarea name="msg" cols="30" rows="10" placeholder="Twoja wiadomość" class="form-textarea"
+                                required></textarea>
                             <button type="submit" class="form-button">Wyślij</button>
                         </form>
+                        <p class="msg-status success"></p>
                     </div>
                 </div>
             </div>
