@@ -4,6 +4,8 @@ const burgerBtn = document.querySelector(".hamburger");
 const navigation = document.querySelector(".nav");
 const navList = document.querySelector(".nav__menu");
 const navItems = document.querySelectorAll(".nav__menu-item-link");
+const facebookBtn = document.querySelectorAll(".facebook-btn");
+const instagramBtn = document.querySelectorAll(".instagram-btn");
 const contactSection = document.querySelector(".contact");
 const portfolioSection = document.querySelector(".portfolio");
 const portfolioWebsites = document.querySelectorAll(".portfolio-box__website");
@@ -59,6 +61,15 @@ const scrollToPortfolio = () => {
 	}
 };
 
+const toFacebook = () => {
+	window.location.href = "https://www.facebook.com/kuba.romanski.54";
+};
+
+const toInstagram = () => {
+	window.location.href =
+		"https://www.instagram.com/kubaromanskiwebdev?igsh=MmFlaWl3cjE3SNHNj";
+};
+
 const blockScroll = () => {
 	body.classList.toggle("block-scroll");
 };
@@ -112,11 +123,38 @@ const teraphist = document.querySelector(".teraphist");
 mazex.addEventListener("click", () => {
 	openNewTab("https://mazex-hds.pl/");
 });
+rafservis.addEventListener("click", () => {
+	openNewTab("https://rafservis.pl/");
+});
+telegrafcity.addEventListener("click", () => {
+	openNewTab("https://telegrafcity.pl/");
+});
+pytlikbud.addEventListener("click", () => {
+	openNewTab("https://pytlik-bud.de/");
+});
+glamcar.addEventListener("click", () => {
+	openNewTab("https://kuba1507.github.io/BootstrapFinal/");
+});
+hairdresser.addEventListener("click", () => {
+	openNewTab("https://kuba1507.github.io/Hairdresser/");
+});
+budmar.addEventListener("click", () => {
+	openNewTab("https://kuba1507.github.io/Handyman/");
+});
+teraphist.addEventListener("click", () => {
+	openNewTab("https://kuba1507.github.io/Therapist/");
+});
 
 burgerBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleHeaderShadow);
 navItems.forEach((item) => {
 	item.addEventListener("click", closeNav);
+});
+facebookBtn.forEach((btn) => {
+	btn.addEventListener("click", toFacebook);
+});
+instagramBtn.forEach((btn) => {
+	btn.addEventListener("click", toInstagram);
 });
 window.addEventListener("load", handlePortfolioWebsites);
 window.addEventListener("scroll", handlePortfolioWebsites);

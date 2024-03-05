@@ -472,6 +472,7 @@ body {
 				width: 1000px;
 				height: 1000px;
 				border: 30px solid $turqoise-light;
+				animation: circleOne 15s ease-in-out infinite;
 				opacity: 0.3;
 			}
 
@@ -481,6 +482,7 @@ body {
 				height: 800px;
 				width: 800px;
 				border: 30px solid $turqoise;
+				animation: circleTwo 13s ease-out infinite;
 				opacity: 0.1;
 			}
 		}
@@ -709,5 +711,33 @@ body {
 	to {
 		transform: translateX(0);
 		opacity: 1;
+	}
+}
+
+@keyframes circleOne {
+	0% {
+		transform: translateY(0) translateX(0);
+	}
+
+	50% {
+		transform: translateY(8%) translateX(10%);
+	}
+
+	100% {
+		transform: translateY(0) translateX(0);
+	}
+}
+
+@keyframes circleTwo {
+	0% {
+		transform: translateY(0) translateX(0);
+	}
+
+	50% {
+		transform: translateY(-8%) translateX(-10%);
+	}
+
+	100% {
+		transform: translateY(0) translateX(0);
 	}
 }
