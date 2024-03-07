@@ -9,6 +9,7 @@ const instagramBtn = document.querySelectorAll(".instagram-btn");
 const contactSection = document.querySelector(".contact");
 const portfolioSection = document.querySelector(".portfolio");
 const portfolioWebsites = document.querySelectorAll(".portfolio-box__website");
+const msgStatus = document.querySelector(".msg-status");
 
 const handleNav = () => {
 	burgerBtn.classList.toggle("is-active");
@@ -104,6 +105,26 @@ const handlePortfolioWebsites = () => {
 		portfolioWebsites.forEach((website) => {
 			website.classList.remove("hover");
 		});
+	}
+};
+
+const handleForm = () => {
+	if (document.location.search === "?mail_status=sent") {
+		msgStatus.classList.add("success");
+		msgStatus.textContent = "Wiadomość wysłana!";
+
+		setTimeout(() => {
+			msgStatus.classList.remove("success");
+		}, 3000);
+	}
+
+	if (document.location.search === "?mail_status=error") {
+		msgStatus.classList.add("error");
+		msgStatus.textContent = "Wystąpił błąd.";
+
+		setTimeout(() => {
+			msgStatus.classList.remove("error");
+		}, 3000);
 	}
 };
 
