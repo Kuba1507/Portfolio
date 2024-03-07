@@ -10,6 +10,7 @@ const contactSection = document.querySelector(".contact");
 const portfolioSection = document.querySelector(".portfolio");
 const portfolioWebsites = document.querySelectorAll(".portfolio-box__website");
 const msgStatus = document.querySelector(".msg-status");
+const formBtn = document.querySelector(".form-button");
 
 const handleNav = () => {
 	burgerBtn.classList.toggle("is-active");
@@ -180,3 +181,4 @@ instagramBtn.forEach((btn) => {
 window.addEventListener("load", handlePortfolioWebsites);
 window.addEventListener("scroll", handlePortfolioWebsites);
 window.addEventListener("resize", handlePortfolioWebsites);
+formBtn.addEventListener("click", handleForm);
