@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Titillium+Web:wght@400;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/hamburger.min.css">
 </head>
@@ -48,7 +49,7 @@
     <main class="main">
         <section class="welcome-section">
             <div class="wrapper">
-                <div class="content-part">
+                <div class="content-part" data-aos="zoom-in">
                     <h1 class="content-part__heading">Kuba <span>Romański</span></h1>
                     <p class="content-part__description">
                         Jestem Web Developerem, który z pasją i zaangażowaniem stworzy najlepszą dla Ciebie stronę
@@ -77,7 +78,7 @@
                         Kontakt
                     </button>
                 </div>
-                <div class="image-part">
+                <div class="image-part" data-aos="zoom-in">
                     <div class="image-part__trapezoid"></div>
                     <img src="dist/img/avatar.png" alt="Animowany awatar chłopca w bluzie" class="image-part__avatar">
                 </div>
@@ -85,8 +86,8 @@
         </section>
         <section class="about-me" id="about-me">
             <div class="wrapper">
-                <h2 class="section-title">O mnie</h2>
-                <div class="about-me-box">
+                <h2 class="section-title" data-aos="zoom-out-down">O mnie</h2>
+                <div class="about-me-box" data-aos="zoom-out-down">
                     <div class="info-box">
                         <p class="info-box__text">Cześć! Jestem Kuba, mam 22 lata i mam za sobą już parę lat
                             doświadczenia w
@@ -116,7 +117,7 @@
 
                 <div class="testimonials-box">
 
-                    <div class="testimonials-box__block">
+                    <div class="testimonials-box__block" data-aos="flip-right">
 
                         <div class="testimonials-box__block-company">
                             <div
@@ -155,7 +156,7 @@
                         </div>
                     </div>
 
-                    <div class="testimonials-box__block">
+                    <div class="testimonials-box__block" data-aos="flip-right" data-aos-delay="200">
 
                         <div class="testimonials-box__block-company">
                             <div
@@ -194,7 +195,7 @@
                         </div>
                     </div>
 
-                    <div class="testimonials-box__block">
+                    <div class="testimonials-box__block" data-aos="flip-right" data-aos-delay="400">
 
                         <div class="testimonials-box__block-company">
                             <div
@@ -457,6 +458,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="dist/js/aos.min.js"></script>
     <script src="dist/js/script.min.js"></script>
 </body>
 
