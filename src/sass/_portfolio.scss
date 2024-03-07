@@ -344,8 +344,24 @@ body {
 						justify-content: center;
 
 						&-logo {
-							height: 4;
-							width: 50px;
+							margin-right: 0.5em;
+							height: 40px;
+							width: 40px;
+							border-radius: 50%;
+							background-size: cover;
+							background-position: center;
+
+							&--first {
+								background-image: url("../img/company-2.png");
+							}
+
+							&--second {
+								background-image: url("../img/company-1.jpg");
+							}
+
+							&--third {
+								background-image: url("../img/avatar.jpg");
+							}
 						}
 
 						&-name {
