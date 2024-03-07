@@ -535,7 +535,7 @@ body {
 			}
 
 			&--bottom {
-				bottom: 0;
+				bottom: -3px;
 				right: 0;
 				background-color: $bg-color;
 				transform: translateX(20px) skew(-55deg);
