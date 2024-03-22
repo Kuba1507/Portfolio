@@ -1,5 +1,16 @@
 @use "colors" as *;
 
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin imgCenter {
+	background-size: cover;
+	background-position: center;
+}
+
 *,
 *::before,
 *::after {
@@ -720,17 +731,6 @@ body {
 			}
 		}
 	}
-}
-
-@mixin flexCenter {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-@mixin imgCenter {
-	background-size: cover;
-	background-position: center;
 }
 
 @keyframes navItemsAnimation {
