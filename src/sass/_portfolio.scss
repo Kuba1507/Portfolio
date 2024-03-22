@@ -131,7 +131,7 @@ body {
 	.welcome-section {
 		.wrapper {
 			@include flexCenter();
-			justify-content: center;
+			flex-direction: column;
 
 			.content-part {
 				padding: 1em;
